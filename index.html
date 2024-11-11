@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 
@@ -17,11 +19,11 @@
     <div class="navbar">
         <div class="navbar-container">
             <ul class="navbar-option">
-                <li><a href="">Home</a></li>
-                <li><a href="">About Me</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Contact Me</a></li>
+                <li><a>Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a>Contact Me</a></li>
             </ul>
             <div class="search">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -31,7 +33,9 @@
     </div>
 
     <div class="intro-vid">
-        <img src="./images/about_video.jpeg" alt="">
+        <video id="video" class="video">
+            <source src="./intro_video.mp4" type="video/mp4">
+          </video>
     </div>
 
     <div class="techpaathshala">
@@ -41,10 +45,12 @@
     </div>
 
     <div class="play-btn">
-        <img src="./images/play_btn.svg" alt="">
+        <button id="playPauseButton" class="play-pause-btn">
+            <i id="playPauseIcon" class="fas fa-play"></i>
+        </button>
     </div>
 
-    <div class="aboutme-section">
+    <div class="aboutme-section" id="about">
         <div class="aboutme-section-img">
             <img src="./images/Anuj banner..png" alt="Anuj_img">
         </div>
@@ -56,7 +62,7 @@
                 fugiat numquam quae quidem!</p>
             <div class="btn">
                 <button id="resume-btn">Download Resume</button>
-                <button id="work-btn">See My Work</button>
+                <button id="work-btn"><a href="#Projects">See My Work</a></button>
             </div>
         </div>
     </div>
@@ -91,7 +97,7 @@
         </div>
     </div>
 
-    <div class="tech-skills">
+    <div class="tech-skills" id="skills">
         <div class="tech-skills-heading">
             <p>Tech Skills</p>
         </div>
@@ -104,25 +110,25 @@
                 <img src="./images/icons8-git.svg" alt="">
                 <p>GIT</p>
             </div>
-            <div class="tech-skills-lists-item">
-                <img src="./images/icons8-java.svg" alt="">
-                <p>Java</p>
+            <div class="tech-skills-lists-item-dev">
+                <img src="./images/devicon_git (1).svg" alt="">
+                <p>Chrome Dev Tools</p>
             </div>
             <div class="tech-skills-lists-item">
                 <img src="./images/icons8-npm.svg" alt="">
                 <p>NPM</p>
             </div>
             <div class="tech-skills-lists-item">
-                <img src="./images/icons8-spring-boot-logo.svg" alt="">
-                <p>Spring</p>
+                <img src="./images/devicon_mongodb.svg" alt="">
+                <p>MongoDB</p>
             </div>
             <div class="tech-skills-lists-item">
                 <img src="./images/icons8-react-native.svg" alt="">
                 <p>ReactJS</p>
             </div>
             <div class="tech-skills-lists-item">
-                <img src="./images/icons8-html.svg" alt="">
-                <p>HTML</p>
+                <img src="./images/skill-icons_redux.svg" alt="">
+                <p>Redux</p>
             </div>
             <div class="tech-skills-lists-item">
                 <img src="./images/icons8-css.svg" alt="">
@@ -186,7 +192,7 @@
         </div>
     </div>
 
-    <div class="projects">
+    <div class="projects" id="projects">
         <div class="projects-heading">
             <p>Projects</p>
         </div>
@@ -234,7 +240,7 @@
         </div>
         <div class="slider">
             <div class="slider-btns" id="prev">
-                
+
                 <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M0.432944 1.57511L1.49394 0.515108L7.27294 6.29211C7.3661 6.38468 7.44003 6.49475 7.49048 6.616C7.54092 6.73725 7.56689 6.86728 7.56689 6.99861C7.56689 7.12993 7.54092 7.25996 7.49048 7.38121C7.44003 7.50246 7.3661 7.61254 7.27294 7.70511L1.49394 13.4851L0.433944 12.4251L5.85794 7.00011L0.432944 1.57511Z"
@@ -404,7 +410,9 @@
                 <button>Contact Me</button>
             </div>
         </div>
-        <div class="blank-white-bgrd"></div>
+        <div class="blank-white-bgrd">
+            <p>© 20XX Your Name. All Right Reserved.</p>
+        </div>
     </div>
 
 
